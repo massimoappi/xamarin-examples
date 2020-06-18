@@ -6,21 +6,49 @@
     android:paddingStart="@dimen/left_padding"
     android:paddingEnd="@dimen/left_padding"
     android:paddingTop="@dimen/top_margin">
+    
     <TextView
         android:text="@string/app_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/top_margin" />
+        
     <Button
         android:id="@+id/start_timestamp_service_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:enabled="true"
+        android:enabled="false"
         android:text="@string/restart_timestamp_service_button_text" />
     <Button
         android:id="@+id/stop_timestamp_service_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:enabled="false"
-        android:text="@string/stop_timestamp_service_button_text" />
+        android:text="@string/stop_timestamp_service_button_text" 
+        android:layout_marginBottom="@dimen/top_margin" />
+
+    <Button
+        android:id="@+id/bind_timestamp_service_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/bind_timestamp_service_button_text" />
+    
+    <Button
+        android:id="@+id/unbind_timestamp_service_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/unbind_timestamp_service_button_text"     
+        android:layout_marginBottom="@dimen/top_margin"/>
+
+    <TextView
+        android:id="@+id/date_time_label"
+        android:text="date/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/top_margin"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
 </LinearLayout>
