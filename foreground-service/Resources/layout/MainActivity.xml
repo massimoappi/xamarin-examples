@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -22,5 +22,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:enabled="false"
-        android:text="@string/stop_timestamp_service_button_text" />
+        android:text="@string/stop_timestamp_service_button_text" 
+        android:layout_marginBottom="@dimen/top_margin" />
+
+    <Button
+        android:id="@+id/bind_timestamp_service_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="@string/bind_timestamp_service_button_text" />
+    <Button
+        android:id="@+id/unbind_timestamp_service_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/unbind_timestamp_service_button_text" />
+
+    <TextView
+        android:id="@+id/device_time_label"
+        android:text="device-time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
 </LinearLayout>

@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("ServicesDemo3.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("ForegroundService.Resource", IsApplication=true)]
 
-namespace ServicesDemo3
+namespace ForegroundService
 {
 	
 	
@@ -279,82 +279,91 @@ namespace ServicesDemo3
 			public const int async = 2131099654;
 			
 			// aapt resource value: 0x7F060007
-			public const int blocking = 2131099655;
+			public const int bind_timestamp_service_button = 2131099655;
 			
 			// aapt resource value: 0x7F060008
-			public const int cancel_action = 2131099656;
+			public const int blocking = 2131099656;
 			
 			// aapt resource value: 0x7F060009
-			public const int chronometer = 2131099657;
+			public const int cancel_action = 2131099657;
 			
 			// aapt resource value: 0x7F06000A
-			public const int end_padder = 2131099658;
+			public const int chronometer = 2131099658;
 			
 			// aapt resource value: 0x7F06000B
-			public const int forever = 2131099659;
+			public const int device_time_label = 2131099659;
 			
 			// aapt resource value: 0x7F06000C
-			public const int icon = 2131099660;
+			public const int end_padder = 2131099660;
 			
 			// aapt resource value: 0x7F06000D
-			public const int icon_group = 2131099661;
+			public const int forever = 2131099661;
 			
 			// aapt resource value: 0x7F06000E
-			public const int info = 2131099662;
+			public const int icon = 2131099662;
 			
 			// aapt resource value: 0x7F06000F
-			public const int italic = 2131099663;
+			public const int icon_group = 2131099663;
 			
 			// aapt resource value: 0x7F060010
-			public const int line1 = 2131099664;
+			public const int info = 2131099664;
 			
 			// aapt resource value: 0x7F060011
-			public const int line3 = 2131099665;
+			public const int italic = 2131099665;
 			
 			// aapt resource value: 0x7F060012
-			public const int media_actions = 2131099666;
+			public const int line1 = 2131099666;
 			
 			// aapt resource value: 0x7F060013
-			public const int normal = 2131099667;
+			public const int line3 = 2131099667;
 			
 			// aapt resource value: 0x7F060014
-			public const int notification_background = 2131099668;
+			public const int media_actions = 2131099668;
 			
 			// aapt resource value: 0x7F060015
-			public const int notification_main_column = 2131099669;
+			public const int normal = 2131099669;
 			
 			// aapt resource value: 0x7F060016
-			public const int notification_main_column_container = 2131099670;
+			public const int notification_background = 2131099670;
 			
 			// aapt resource value: 0x7F060017
-			public const int right_icon = 2131099671;
+			public const int notification_main_column = 2131099671;
 			
 			// aapt resource value: 0x7F060018
-			public const int right_side = 2131099672;
+			public const int notification_main_column_container = 2131099672;
 			
 			// aapt resource value: 0x7F060019
-			public const int start_timestamp_service_button = 2131099673;
+			public const int right_icon = 2131099673;
 			
 			// aapt resource value: 0x7F06001A
-			public const int status_bar_latest_event_content = 2131099674;
+			public const int right_side = 2131099674;
 			
 			// aapt resource value: 0x7F06001B
-			public const int stop_timestamp_service_button = 2131099675;
+			public const int start_timestamp_service_button = 2131099675;
 			
 			// aapt resource value: 0x7F06001C
-			public const int tag_transition_group = 2131099676;
+			public const int status_bar_latest_event_content = 2131099676;
 			
 			// aapt resource value: 0x7F06001D
-			public const int text = 2131099677;
+			public const int stop_timestamp_service_button = 2131099677;
 			
 			// aapt resource value: 0x7F06001E
-			public const int text2 = 2131099678;
+			public const int tag_transition_group = 2131099678;
 			
 			// aapt resource value: 0x7F06001F
-			public const int time = 2131099679;
+			public const int text = 2131099679;
 			
 			// aapt resource value: 0x7F060020
-			public const int title = 2131099680;
+			public const int text2 = 2131099680;
+			
+			// aapt resource value: 0x7F060021
+			public const int time = 2131099681;
+			
+			// aapt resource value: 0x7F060022
+			public const int title = 2131099682;
+			
+			// aapt resource value: 0x7F060023
+			public const int unbind_timestamp_service_button = 2131099683;
 			
 			static Id()
 			{
@@ -389,7 +398,7 @@ namespace ServicesDemo3
 		{
 			
 			// aapt resource value: 0x7F080000
-			public const int Main = 2131230720;
+			public const int MainActivity = 2131230720;
 			
 			// aapt resource value: 0x7F080001
 			public const int notification_action = 2131230721;
@@ -472,25 +481,31 @@ namespace ServicesDemo3
 			public const int app_name = 2131361793;
 			
 			// aapt resource value: 0x7F0A0002
-			public const int notification_text = 2131361794;
+			public const int bind_timestamp_service_button_text = 2131361794;
 			
 			// aapt resource value: 0x7F0A0003
-			public const int restart_timer = 2131361795;
+			public const int notification_text = 2131361795;
 			
 			// aapt resource value: 0x7F0A0004
-			public const int restart_timestamp_service_button_text = 2131361796;
+			public const int restart_timer = 2131361796;
 			
 			// aapt resource value: 0x7F0A0005
-			public const int service_started = 2131361797;
+			public const int restart_timestamp_service_button_text = 2131361797;
 			
 			// aapt resource value: 0x7F0A0006
-			public const int status_bar_notification_info_overflow = 2131361798;
+			public const int service_started = 2131361798;
 			
 			// aapt resource value: 0x7F0A0007
-			public const int stop_service = 2131361799;
+			public const int status_bar_notification_info_overflow = 2131361799;
 			
 			// aapt resource value: 0x7F0A0008
-			public const int stop_timestamp_service_button_text = 2131361800;
+			public const int stop_service = 2131361800;
+			
+			// aapt resource value: 0x7F0A0009
+			public const int stop_timestamp_service_button_text = 2131361801;
+			
+			// aapt resource value: 0x7F0A000A
+			public const int unbind_timestamp_service_button_text = 2131361802;
 			
 			static String()
 			{
