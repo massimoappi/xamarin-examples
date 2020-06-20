@@ -114,7 +114,6 @@
     <AndroidResource Include="Resources\drawable-xxhdpi-v9\ic_stat_name.png" />
     <AndroidResource Include="Resources\values\strings.xml" />
     <AndroidResource Include="Resources\values\dimen.xml" />
-    <AndroidResource Include="Resources\layout\MainActivity.axml" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_action_restart_timer.png" />
     <AndroidResource Include="Resources\drawable-hdpi-v11\ic_action_restart_timer.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_action_restart_timer.png" />

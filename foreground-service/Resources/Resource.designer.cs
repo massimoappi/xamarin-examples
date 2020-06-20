@@ -484,28 +484,34 @@ namespace ForegroundService
 			public const int bind_timestamp_service_button_text = 2131361794;
 			
 			// aapt resource value: 0x7F0A0003
-			public const int notification_text = 2131361795;
+			public const int device_time = 2131361795;
 			
 			// aapt resource value: 0x7F0A0004
-			public const int restart_timer = 2131361796;
+			public const int device_time_unknown = 2131361796;
 			
 			// aapt resource value: 0x7F0A0005
-			public const int restart_timestamp_service_button_text = 2131361797;
+			public const int notification_text = 2131361797;
 			
 			// aapt resource value: 0x7F0A0006
-			public const int service_started = 2131361798;
+			public const int restart_timer = 2131361798;
 			
 			// aapt resource value: 0x7F0A0007
-			public const int status_bar_notification_info_overflow = 2131361799;
+			public const int restart_timestamp_service_button_text = 2131361799;
 			
 			// aapt resource value: 0x7F0A0008
-			public const int stop_service = 2131361800;
+			public const int service_started = 2131361800;
 			
 			// aapt resource value: 0x7F0A0009
-			public const int stop_timestamp_service_button_text = 2131361801;
+			public const int status_bar_notification_info_overflow = 2131361801;
 			
 			// aapt resource value: 0x7F0A000A
-			public const int unbind_timestamp_service_button_text = 2131361802;
+			public const int stop_service = 2131361802;
+			
+			// aapt resource value: 0x7F0A000B
+			public const int stop_timestamp_service_button_text = 2131361803;
+			
+			// aapt resource value: 0x7F0A000C
+			public const int unbind_timestamp_service_button_text = 2131361804;
 			
 			static String()
 			{

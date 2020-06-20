@@ -10,4 +10,6 @@
 	<string name="notification_text">The started service is running.</string>
 	<string name="restart_timer">Restart Timer</string>
 	<string name="stop_service">Stop Service</string>
+  <string name="device_time">Device time:</string>
+  <string name="device_time_unknown">unknown</string>
 </resources>
