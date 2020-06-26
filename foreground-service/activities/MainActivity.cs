@@ -22,7 +22,7 @@ namespace ForegroundService
 		private Button		unbindServiceButton;
 		private TextView	deviceTimeLabel;
 		
-		private Intent	serviceIntent;
+		private Intent		serviceIntent;
 		private ForegroundService service;
 		private ForegroundServiceConnector<ForegroundService> serviceConnector;
 		

@@ -33,7 +33,7 @@ namespace ForegroundService
 			Log.Info(TAG, $"OnServiceConnected(): ctor");
 
 			IsConnected = false;
-			Binder = null;
+			Binder			= null;
 		}
 
     #endregion
