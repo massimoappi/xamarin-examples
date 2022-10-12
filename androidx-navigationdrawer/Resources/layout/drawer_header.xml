@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="150dp"  
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="bottom"
+    android:background="@drawable/background_material">  
+      
+   <ImageView    
+        android:layout_width="50dp"    
+        android:layout_height="50dp"    
+        android:id="@+id/imageView"        
+        android:src="@drawable/logo"
+        android:layout_marginBottom="10dp"/>  
+   
+    <TextView  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:text="La mia APP"  
+        android:textSize="14sp"  
+        android:textColor="#FFFFFF"  
+        android:textStyle="bold"  
+        android:gravity="center_horizontal"  
+        android:paddingBottom="4dp"  
+        android:id="@+id/miaapp" />  
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="info@asac.it"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        />
+   
+</LinearLayout>  
