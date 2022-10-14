@@ -12,15 +12,19 @@ using AndroidX.Core.View;
 using AndroidX.DrawerLayout.Widget;
 using Google.Android.Material.Navigation;
 using NLog;
+using System;
 using System.IO;
 
 namespace AndroidXNavigationDrawer
 {
   [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-  public class MainActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
+  public class MainActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener                                               
   {
+    private Toolbar               toolbar;
+    private int                   toolbarHeight;
     private DrawerLayout          drawerLayout; 
     private ActionBarDrawerToggle drawerToggle; 
+
     private Logger logger;
 
     protected override void OnCreate(Bundle savedInstanceState)
@@ -58,17 +62,39 @@ namespace AndroidXNavigationDrawer
       // Set our view from the "main" layout resource
       SetContentView(Resource.Layout.activity_main);
 
+      // Inizializza View
+      InitializeView();
+
       // Inizializza Toolbar
       InitializeToolbar();
 
       // Inizializza NavigationView
-      InitializeNavigationView();
-      
+      InitializeNavigationView();      
+
+      //HomeFragment fragment = new HomeFragment();
+      //FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+      //fragmentTransaction.replace(R.id.frame_layout, fragment, "Home");
+      //fragmentTransaction.commit();
+    }
+
+    private void InitializeView()
+    { 
+
+      // Recupera riferimenti agli oggetti della view
+      toolbar = (Toolbar)FindViewById(Resource.Id.toolbar);
+      drawerLayout = (DrawerLayout)FindViewById(Resource.Id.rootLayout);
+
       //this.Window.SetFlags(WindowManagerFlags.LayoutNoLimits, WindowManagerFlags.LayoutNoLimits);
 
       //this.Window.SetFlags(WindowManagerFlags.LayoutNoLimits | WindowManagerFlags.LayoutInScreen, WindowManagerFlags.LayoutNoLimits | WindowManagerFlags.LayoutInScreen);
-            
-      this.Window.DecorView.SystemUiVisibility = (StatusBarVisibility)SystemUiFlags.LayoutFullscreen;
+
+      toolbarHeight = toolbar.LayoutParameters.Height;
+      /*
+      this.Window.DecorView.SystemUiVisibility = (StatusBarVisibility)SystemUiFlags.LayoutFullscreen |
+                                                 (StatusBarVisibility)SystemUiFlags.LayoutStable |
+                                                 (StatusBarVisibility)SystemUiFlags.LayoutHideNavigation;
+      */
+
       //this.Window.DecorView.SystemUiVisibility = (StatusBarVisibility)SystemUiFlags.LayoutFullscreen | (StatusBarVisibility)SystemUiFlags.LayoutStable;
 
       /*
@@ -76,16 +102,12 @@ namespace AndroidXNavigationDrawer
                                                  (StatusBarVisibility)SystemUiFlags.LightStatusBar | 
                                                  (StatusBarVisibility)SystemUiFlags.LightNavigationBar;
       */
-      //HomeFragment fragment = new HomeFragment();
-      //FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-      //fragmentTransaction.replace(R.id.frame_layout, fragment, "Home");
-      //fragmentTransaction.commit();
     }
+    
 
     private void InitializeToolbar()
     { 
-      // Imposta la toolbar come ActionBar dell'Activity
-      Toolbar toolbar = (Toolbar)FindViewById(Resource.Id.toolbar);
+      // Imposta la toolbar come ActionBar dell'Activity      
       SetSupportActionBar(toolbar);
      
       // Imposta icona custom
@@ -95,7 +117,7 @@ namespace AndroidXNavigationDrawer
       
       // Recupera riferimento al DrawerLayout dell'Activity e crea un ActionBarDrawerToggle per la
       // gestione automatizzata dell'apertura/chiusura del NavigationView
-      drawerLayout = (DrawerLayout)FindViewById(Resource.Id.drawer_layout);
+      drawerLayout = (DrawerLayout)FindViewById(Resource.Id.rootLayout);
       drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, Resource.String.nav_open, Resource.String.nav_close);
 
       // Aggancia il toggle al DrawerLayout per applicare la gestione
@@ -104,8 +126,9 @@ namespace AndroidXNavigationDrawer
       drawerToggle.SyncState();     
 
       //this.Window.DecorView.GetWindowVisibleDisplayFrame(out Android.Graphics.Rect rect);
-
     }
+
+
 
     private void InitializeNavigationView()
     { 
